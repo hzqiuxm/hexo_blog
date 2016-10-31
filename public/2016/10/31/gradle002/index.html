@@ -15,16 +15,19 @@
 
 
 
-<meta name="description" content="你离搭建一个个人博客网站还差5分钟，赶紧开始吧……">
+<meta name="description" content="通过这一章节，你讲学会如何安装Gradle以及简单的任务构建与操作">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建简易指南">
-<meta property="og:url" content="http://hzqiuxm.github.io/2016/10/27/hello-world/index.html">
+<meta property="og:title" content="Gradle系列二：入门与安装">
+<meta property="og:url" content="http://hzqiuxm.github.io/2016/10/31/gradle002/index.html">
 <meta property="og:site_name" content="菡萏如佳人Blog">
-<meta property="og:description" content="你离搭建一个个人博客网站还差5分钟，赶紧开始吧……">
-<meta property="og:updated_time" content="2016-10-31T03:23:22.000Z">
+<meta property="og:description" content="通过这一章节，你讲学会如何安装Gradle以及简单的任务构建与操作">
+<meta property="og:image" content="http://7xsh7v.com2.z0.glb.clouddn.com/1.png">
+<meta property="og:image" content="http://7xsh7v.com2.z0.glb.clouddn.com/2.png">
+<meta property="og:updated_time" content="2016-10-31T03:19:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo搭建简易指南">
-<meta name="twitter:description" content="你离搭建一个个人博客网站还差5分钟，赶紧开始吧……">
+<meta name="twitter:title" content="Gradle系列二：入门与安装">
+<meta name="twitter:description" content="通过这一章节，你讲学会如何安装Gradle以及简单的任务构建与操作">
+<meta name="twitter:image" content="http://7xsh7v.com2.z0.glb.clouddn.com/1.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -56,7 +59,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Hexo搭建简易指南 | 菡萏如佳人Blog</title>
+<title>Gradle系列二：入门与安装 | 菡萏如佳人Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -265,11 +268,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-gradle002" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/10/27/hello-world/" class="article-date">
-      <time datetime="2016-10-27T13:06:24.000Z" itemprop="datePublished">2016-10-27</time>
+      <a href="/2016/10/31/gradle002/" class="article-date">
+      <time datetime="2016-10-31T02:10:31.000Z" itemprop="datePublished">2016-10-31</time>
 </a>
 
 
@@ -284,7 +287,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo搭建简易指南
+      Gradle系列二：入门与安装
     </h1>
   
 
@@ -295,7 +298,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gradle/">Gradle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IT/">IT</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -305,21 +308,44 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>你离搭建一个个人博客网站还差5分钟，赶紧开始吧……<br><a id="more"></a></p>
-<h1 id="Hexo搭建简易指南"><a href="#Hexo搭建简易指南" class="headerlink" title="Hexo搭建简易指南"></a>Hexo搭建简易指南</h1><p>面向对象是程序员们，此教程主要以Windows下安装, Mac和linux安装就更简单了基本是输入安装Hexo的几个命令即可</p>
-<h2 id="搭建环境准备"><a href="#搭建环境准备" class="headerlink" title="搭建环境准备"></a>搭建环境准备</h2><h3 id="GIT环境搭建"><a href="#GIT环境搭建" class="headerlink" title="GIT环境搭建"></a>GIT环境搭建</h3><p>建议安装一个git客户端软件(下载不了？因为你没翻墙啊)</p>
-<p>点击去下载吧:<a href="https://git-scm.com/downloads/" target="_blank" rel="external">GitBash客户端下载</a></p>
-<p>###安装Nodejs环境<br>直接去官网下载一个，无脑下一步就行</p>
-<p>点击去下载吧:<a href="https://nodejs.org/en/" target="_blank" rel="external">Nodejs安装下载</a></p>
-<h3 id="注册一个GITHUB账号"><a href="#注册一个GITHUB账号" class="headerlink" title="注册一个GITHUB账号"></a>注册一个GITHUB账号</h3><p>这个就不用教了吧，相信作为一个合格的程序员，你早就有了。什么？ 你没有，那你离合格的程序员就差一个GITHUB账号了，还不赶紧戳<a href="https://github.com/join?source=login" target="_blank" rel="external">我去注册</a></p>
-<h2 id="开始安装Hexo"><a href="#开始安装Hexo" class="headerlink" title="开始安装Hexo"></a>开始安装Hexo</h2><p>1 安装Hexo命令行环境<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-<span class="keyword">cli</span> -g</div></pre></td></tr></table></figure></p>
-<p>2 在本地创建一个目录，用来存放你的博客源码</p>
-<p>3 进入新建的目录执行以下命令，进行初始化和安装工作<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo init</span></div></pre></td></tr></table></figure></p>
-<p>4 接下来生成默认的博客并在本地测试下<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo</span> g  <span class="comment">#生成默认的hello world</span></div><div class="line">hexo s  <span class="comment">#启动本地服务 访问 localhost:4000查看效果</span></div></pre></td></tr></table></figure></p>
-<p>5 到这步说明本地已经安装好了，接下来是如何同步到github上用默认的域名访问<br>  在你的github上创建一个新仓库，仓库名格式必须是：{你的用户名}.github.io</p>
-<p>6 配置配置文件_config.yml 内容如下（注意空格!）<br><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">deploy</span>:</div><div class="line">  <span class="attribute">type</span>: git</div><div class="line">  <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/&#123;你的用户名&#125;/&#123;你的用户名&#125;.github.io.git</span></div><div class="line">  <span class="attribute">branch</span>: master</div></pre></td></tr></table></figure></p>
-<p>7 安装一个发布插件并发布<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span> hexo-deployer-git --save  <span class="comment">#安装发布插件</span></div><div class="line"></div><div class="line">hexo deploy <span class="comment">#发布到github</span></div></pre></td></tr></table></figure></p>
-<p>8 全部完成，你可以通过github提供的域名进行访问你的博客了！<br>   默认域名地址：{你的用户名}.github.io 当然你还可以绑定到你自己的域名上<br>   请参考教程: <a href="http://www.hzqiuxm.com" target="_blank" rel="external">Github上如何绑定自己的域名</a></p>
+        <p>通过这一章节，你讲学会如何安装Gradle以及简单的任务构建与操作<br><a id="more"></a></p>
+<h2 id="入门与安装"><a href="#入门与安装" class="headerlink" title="入门与安装"></a>入门与安装</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><ul>
+<li>官方下载地址: <a href="https://gradle.org/gradle-download/" target="_blank" rel="external">https://gradle.org/gradle-download/</a></li>
+<li>安装就是配置环境变量，增加GRADLE_HOME环境变量，值为gradle-2.12\bin所在目录<blockquote>
+<p>windows下直接在环境变量对话框中定义，类linux系统</p>
+<pre><code>export GRADE_HOME = xxxx/xxxx    
+export PATH=$PATH:$GRADLE_HOME/bin
+</code></pre></blockquote>
+</li>
+<li>验证是否安装成功<br><img src="http://7xsh7v.com2.z0.glb.clouddn.com/1.png" alt="check install"></li>
+<li><p>来一个gradle的hello world<br><strong>新建一个文件 build.gradle</strong></p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">task</span> helloWorld&#123;</div><div class="line"></div><div class="line">	<span class="keyword">task</span> startSession &lt;&lt; &#123;</div><div class="line">		<span class="keyword">println</span> <span class="string">'Welcome to gradle world!'</span></div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="number">3</span>.<span class="keyword">times</span> &#123;</div><div class="line">		<span class="keyword">task</span> <span class="string">"genGradle$it"</span> &lt;&lt; &#123;</div><div class="line">			<span class="keyword">println</span> <span class="string">'genGradle rocks'</span></div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">		</div><div class="line">	genGradle0.dependsOn startSession</div><div class="line">	genGradle2.dependsOn genGradle1, genGradle0</div><div class="line">	</div><div class="line">	<span class="keyword">task</span> groupGradles(dependsOn: genGradle2)</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行：gradle -q groupGradles<br><img src="http://7xsh7v.com2.z0.glb.clouddn.com/2.png" alt="run helloworld"></p>
+</li>
+</ul>
+<h3 id="程序简单说明"><a href="#程序简单说明" class="headerlink" title="程序简单说明"></a>程序简单说明</h3><ul>
+<li>这里的task和Ant的targets是对等的</li>
+<li>&lt;&lt; 符号是doLast的alias，doFirst 和 doLast 可以多次执行调用。他们在开始或结束的 task 动作清单中添加动作。task 执行时，按动作列表的顺序执行的动作。操作符 &lt;&lt; 仅仅是 doLast 的别名。</li>
+<li>-q是代表quiet模式，不生成构建编译过程的日志信息</li>
+</ul>
+<h3 id="其他技巧"><a href="#其他技巧" class="headerlink" title="其他技巧"></a>其他技巧</h3><ul>
+<li><p>列出项目中所有的task</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gradle -<span class="selector-tag">q</span> tasks --all</div></pre></td></tr></table></figure>
+</li>
+<li><p>在执行时排除一个任务</p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gradle groupGradles -x <span class="keyword">ge</span><span class="symbol">nGradle0</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>任务名字采用缩写</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gradle <span class="keyword">group</span>Hello 等价于  gradle gH</div><div class="line">gradle <span class="keyword">group</span>Gradle0 等价于 gradle gG0</div></pre></td></tr></table></figure>
+</li>
+<li><p>常用的命令行选项</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">-<span class="selector-tag">b</span> 指定构建脚本名字，某人build<span class="selector-class">.gradle</span></div><div class="line">-<span class="selector-tag">i</span> 执行时候输出详细日志信息</div><div class="line">-<span class="selector-tag">q</span> 减少构建出错时打印的日志信息</div><div class="line">--help 打印出所有可用的命令行选项</div></pre></td></tr></table></figure>
+</li>
+<li><p>以后台守护进行方式运行gradle</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gradle groupGradles <span class="comment">--daemon</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -328,13 +354,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/10/27/hello-world/">Hexo搭建简易指南</a></p>
+        <p><span>本文标题:</span><a href="/2016/10/31/gradle002/">Gradle系列二：入门与安装</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">hzqiuxm</a></p>
-        <p><span>发布时间:</span>2016-10-27, 21:06:24</p>
-        <p><span>最后更新:</span>2016-10-31, 11:23:22</p>
+        <p><span>发布时间:</span>2016-10-31, 10:10:31</p>
+        <p><span>最后更新:</span>2016-10-31, 11:19:57</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/10/27/hello-world/" title="Hexo搭建简易指南">http://hzqiuxm.github.io/2016/10/27/hello-world/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://hzqiuxm.github.io/2016/10/27/hello-world/　　作者: hzqiuxm" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/10/31/gradle002/" title="Gradle系列二：入门与安装">http://hzqiuxm.github.io/2016/10/31/gradle002/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://hzqiuxm.github.io/2016/10/31/gradle002/　　作者: hzqiuxm" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -347,15 +373,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/10/30/gradle001/">
-                    Gradle系列一：构建工具简介
+                <a href="/2016/10/31/gradle003/">
+                    gradle系列三：脚本基础
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/10/27/liurun001/">
-                    商业篇——消费心理学
+                <a href="/2016/10/30/gradle001/">
+                    Gradle系列一：构建工具简介
                 </a>
             </div>
         
@@ -367,7 +393,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo搭建简易指南"><span class="toc-number">1.</span> <span class="toc-text">Hexo搭建简易指南</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建环境准备"><span class="toc-number">1.1.</span> <span class="toc-text">搭建环境准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#GIT环境搭建"><span class="toc-number">1.1.1.</span> <span class="toc-text">GIT环境搭建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注册一个GITHUB账号"><span class="toc-number">1.1.2.</span> <span class="toc-text">注册一个GITHUB账号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始安装Hexo"><span class="toc-number">1.2.</span> <span class="toc-text">开始安装Hexo</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#入门与安装"><span class="toc-number">1.</span> <span class="toc-text">入门与安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载安装"><span class="toc-number">1.1.</span> <span class="toc-text">下载安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#程序简单说明"><span class="toc-number">1.2.</span> <span class="toc-text">程序简单说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他技巧"><span class="toc-number">1.3.</span> <span class="toc-text">其他技巧</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -403,7 +429,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Hexo搭建简易指南　| 菡萏如佳人Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"Gradle系列二：入门与安装　| 菡萏如佳人Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -419,7 +445,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="2016/10/27/hello-world/" data-title="Hexo搭建简易指南" data-url="http://hzqiuxm.github.io/2016/10/27/hello-world/"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/10/31/gradle002/" data-title="Gradle系列二：入门与安装" data-url="http://hzqiuxm.github.io/2016/10/31/gradle002/"></div>
     <script>
         var duoshuoQuery = {short_name:"null"};
         var loadComment = function(){
@@ -442,7 +468,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/10/30/gradle001/" title="上一篇: Gradle系列一：构建工具简介">
+            <a href="/2016/10/31/gradle003/" title="上一篇: gradle系列三：脚本基础">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -450,7 +476,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/10/27/liurun001/" title="下一篇: 商业篇——消费心理学">
+            <a href="/2016/10/30/gradle001/" title="下一篇: Gradle系列一：构建工具简介">
                 <i class="fa fa-angle-right"></i>
             </a>
         
