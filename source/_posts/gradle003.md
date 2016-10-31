@@ -1,5 +1,5 @@
 ---
-title: gradle系列三：脚本基础
+title: Gradle系列三：脚本基础
 date: 2016-10-31 10:15:52
 tags:
 - Gradle
